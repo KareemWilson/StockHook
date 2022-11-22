@@ -2,7 +2,7 @@ import { configureStore, combineReducers } from '@reduxjs/toolkit';
 import stockReducer from './stocks/stocks';
 
 const reducer = combineReducers({
-  stock: stockReducer,
+  stocks: stockReducer,
 });
 
 const store = configureStore({

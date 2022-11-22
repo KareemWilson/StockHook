@@ -1,57 +1,24 @@
 /* eslint-disable */
 
-import React from "react";
+import React, { useEffect } from "react";
 import Stock from "./Stock";
-
-const arr = [
-  {
-    symbol: "AAPL",
-    name: "Apple Inc.",
-    change: -3.28,
-    price: 148.01,
-    changesPercentage: -2.168021,
-  },
-  {
-    symbol: "AMD",
-    name: "Advanced Micro Devices, Inc.",
-    change: -1.11,
-    price: 72.46,
-    changesPercentage: -1.508768,
-  },
-  {
-    symbol: "TSLA",
-    name: "Tesla, Inc.",
-    change: -12.32,
-    price: 167.87,
-    changesPercentage: -6.8372316,
-  },
-  {
-    symbol: "AMZN",
-    name: "Amazon.com, Inc.",
-    change: -1.68,
-    price: 92.46,
-    changesPercentage: -1.7845764,
-  },
-  {
-    symbol: "F",
-    name: "Ford Motor Company",
-    change: -0.04,
-    price: 13.95,
-    changesPercentage: -0.28591824,
-  },
-  {
-    symbol: "CCL",
-    name: "Carnival Corporation & plc",
-    change: -0.15,
-    price: 9.32,
-    changesPercentage: -1.5839553,
-  },
-];
+import { useSelector, useDispatch } from "react-redux";
+import { getStocks } from "../../redux/stocks/stocks";
+import { Link } from "react-router-dom";
 
 function Stocks() {
+  const dispatch = useDispatch();
+  const stocks = useSelector((state) => state.stocks);
+
+  useEffect(() => {
+    dispatch(getStocks());
+  }, [dispatch]);
+
   return (
-    <div className="stocks-container d-flex f-row bg-primary">
-      {arr.map((stock) => (<Stock />))}
+    <div className="stocks-container d-flex flex-column">
+      {stocks.map((stock, index) => (
+          <Stock key={stock.symbol} stock={stock} index={index} />
+      ))}
     </div>
   );
 }

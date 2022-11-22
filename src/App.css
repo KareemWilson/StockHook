@@ -17,6 +17,8 @@
 
 .stocks-container {
   flex-wrap: wrap;
+  max-height: 45rem;
+
 }
 
 .stock{
@@ -27,10 +29,46 @@
   padding: 1rem;
   margin: 0;
   color: white;
+  cursor: pointer;
+  text-decoration: none;
 }
+
+.darker-stock {
+  position: relative;
+  background-color: #dc296e;
+  width: 50%;
+  height: 12.5rem;
+  padding: 1rem;
+  margin: 0;
+  color: white;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.stock:hover {
+  background-color: #953c5c;
+  color: white;
+}
+
+.darker-stock:hover {
+  background-color: #953c5c;
+  color: white;
+}
+
 .details-icon{
   position: absolute;
   top: 0;
   right: 0;
   padding: 16px;
+  cursor: pointer;
+}
+
+.darker-stock:hover > .details-icon {
+  height: 40px;
+  width: 40px;
+}
+
+.stock:hover > .details-icon {
+  height: 40px;
+  width: 40px;
 }
