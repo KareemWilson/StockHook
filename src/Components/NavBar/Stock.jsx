@@ -12,7 +12,7 @@ function Stock({ stock, index }) {
     changesPercentage,
   } = stock;
   return (
-    <Link to={`/${symbol}`} className={(index % 2 === 0 ? 'stock' : 'darker-stock')}>
+    <Link to={`/${symbol}/${name}`} className={(index % 2 === 0 ? 'stock' : 'darker-stock')}>
       <p className="symbol">{symbol}</p>
       <FontAwesomeIcon className="details-icon" icon={faCircleArrowRight} />
       <p className="name">{name}</p>
