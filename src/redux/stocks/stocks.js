@@ -1,4 +1,4 @@
-import { createAsyncThunk } from '@reduxjs/toolkit';
+// import { createAsyncThunk } from '@reduxjs/toolkit';
 
 const STOCK_FETCHED = 'stockhook/stocks/STOCK_FETCHED';
 
