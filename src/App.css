@@ -72,3 +72,9 @@
   height: 40px;
   width: 40px;
 }
+
+.details-container {
+  background-color: #dc296e;
+  height: 90vh;
+  color: white;
+}
