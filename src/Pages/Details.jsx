@@ -1,6 +1,9 @@
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
+import { Link } from 'react-router-dom';
 import { useParams } from 'react-router';
+import { faArrowLeft } from '@fortawesome/free-solid-svg-icons';
 import { getDetails } from '../redux/details/details';
 
 function Details() {
@@ -14,6 +17,9 @@ function Details() {
 
   return (
     <div className="details-container d-flex flex-column align-items-center ">
+      <Link to="/">
+        <FontAwesomeIcon className="back-icon" icon={faArrowLeft} />
+      </Link>
       <p className="name-of-company-in-details">{name}</p>
       <div className="details">
         {Object.keys(details).map((field) => (

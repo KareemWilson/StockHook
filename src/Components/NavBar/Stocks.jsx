@@ -4,7 +4,8 @@ import React, { useEffect } from "react";
 import Stock from "./Stock";
 import { useSelector, useDispatch } from "react-redux";
 import { getStocks } from "../../redux/stocks/stocks";
-import { Link } from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faChartSimple } from '@fortawesome/free-solid-svg-icons';
 
 function Stocks() {
   const dispatch = useDispatch();
@@ -16,6 +17,7 @@ function Stocks() {
 
   return (
     <div className="stocks-container d-flex flex-column">
+      <FontAwesomeIcon className="chart-icon" icon={faChartSimple} /> 
       {stocks.map((stock, index) => (
           <Stock key={stock.symbol} stock={stock} index={index} />
       ))}

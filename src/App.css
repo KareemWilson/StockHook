@@ -4,8 +4,8 @@
 
 .nav-container {
   color: #ebe9e9;
-  background-color: #EC4C8A;
-  font-family: 'monospace';
+  background-color: #ec4c8a;
+  font-family: "monospace";
 }
 
 .poster {
@@ -18,12 +18,11 @@
 .stocks-container {
   flex-wrap: wrap;
   max-height: 45rem;
-
 }
 
-.stock{
+.stock {
   position: relative;
-  background-color: #EC4C8A;
+  background-color: #ec4c8a;
   width: 50%;
   height: 12.5rem;
   padding: 1rem;
@@ -55,7 +54,7 @@
   color: white;
 }
 
-.details-icon{
+.details-icon {
   position: absolute;
   top: 0;
   right: 0;
@@ -81,7 +80,7 @@
 
 .name-of-company-in-details {
   font-size: 50px;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-weight: 700;
   text-align: center;
 }
@@ -97,4 +96,20 @@
 .field-name {
   font-size: larger;
   font-weight: 500;
+}
+
+.back-icon {
+  position: fixed;
+  top: 25px;
+  left: 24px;
+  color: white;
+}
+
+.chart-icon {
+  position: absolute;
+  top: 11px;
+  left: 18px;
+  height: 40px;
+  width: 33px;
+  color: white;
 }
