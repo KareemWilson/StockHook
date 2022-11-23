@@ -5,7 +5,7 @@
 .nav-container {
   color: #ebe9e9;
   background-color: #ec4c8a;
-  font-family: "monospace";
+  font-family: "monospace", sans-serif;
 }
 
 .poster {
@@ -25,11 +25,11 @@
   height: 3rem;
   border-radius: 5px;
   border: none;
-  margin: 3px 0px;
-  box-shadow: rgba(205, 68, 127, 1) 0px 15px 29px 0px;
+  margin: 3px 0;
+  box-shadow: rgba(205, 68, 127, 1) 0 15px 29px 0;
   font-size: 20px;
   background-color: #fe96be;
-  color:  white;
+  color: white;
 }
 
 .stocks-container {
@@ -84,7 +84,7 @@
 }
 
 .price {
-  margin-top: 0px;
+  margin-top: 0;
   margin-bottom: 5px;
   font-weight: 700;
   position: absolute;
