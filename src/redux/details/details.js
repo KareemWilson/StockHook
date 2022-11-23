@@ -9,7 +9,7 @@ const getDetailsOfStockFromAPI = async (symbol) => {
   );
   const data = await response.json();
   const details = {
-    symbol: data[0].symbol,
+    Symbol: data[0].symbol,
     revenue: data[0].revenue,
     grossProfit: data[0].grossProfit,
     costAndExpenses: data[0].costAndExpenses,
