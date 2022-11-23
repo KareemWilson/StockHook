@@ -17,7 +17,7 @@
 
 ## Live demo
 
-You can view a live demo of the project using this [link](https://glittery-sable-7d443b.netlify.app/).
+You can view a live demo of the project using this [link](stockhook.netlify.app).
 
 ## Getting Started
 
