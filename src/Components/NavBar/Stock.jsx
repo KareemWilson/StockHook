@@ -21,7 +21,10 @@ function Stock({ stock, index }) {
         {' '}
         {price}
       </p>
-      <p className="percentage">{changesPercentage}</p>
+      <p className="percentage">
+        {changesPercentage}
+        %
+      </p>
     </Link>
   );
 }

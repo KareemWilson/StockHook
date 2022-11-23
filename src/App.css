@@ -54,6 +54,27 @@
   color: white;
 }
 
+.symbol {
+  font-size: 15px;
+}
+
+.name {
+  font-size: 20px;
+  font-weight: 700;
+  color: #521f32;
+}
+
+.price {
+  margin-top: 30px;
+  margin-bottom: 5px;
+  font-weight: 700;
+}
+
+.percentage {
+  margin: 0;
+  padding: 0;
+}
+
 .details-icon {
   position: absolute;
   top: 0;
