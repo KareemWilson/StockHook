@@ -34,7 +34,7 @@
 
 .stocks-container {
   flex-wrap: wrap;
-  max-height: 45rem;
+  max-height: 99rem;
 }
 
 .stock {
