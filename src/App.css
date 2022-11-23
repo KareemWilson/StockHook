@@ -1,0 +1,159 @@
+.App {
+  text-align: center;
+}
+
+.nav-container {
+  color: #ebe9e9;
+  background-color: #ec4c8a;
+  font-family: "monospace", sans-serif;
+}
+
+.poster {
+  height: 15rem;
+  background-color: #f06ea0;
+  font-size: 5rem;
+  color: aliceblue;
+  background-image: url(/public/backgroungstock.jpeg);
+  background-position: center;
+  background-size: cover;
+  opacity: 0.8;
+  border-bottom-left-radius: 60%;
+}
+
+.search-input {
+  width: 100%;
+  height: 3rem;
+  border-radius: 5px;
+  border: none;
+  margin: 3px 0;
+  box-shadow: rgba(205, 68, 127, 1) 0 15px 29px 0;
+  font-size: 20px;
+  background-color: #fe96be;
+  color: white;
+}
+
+.stocks-container {
+  flex-wrap: wrap;
+  max-height: 99rem;
+}
+
+.stock {
+  position: relative;
+  background-color: #ec4c8a;
+  width: 50%;
+  height: 12.5rem;
+  padding: 1rem;
+  margin: 0;
+  color: white;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.darker-stock {
+  position: relative;
+  background-color: #dc296e;
+  width: 50%;
+  height: 12.5rem;
+  padding: 1rem;
+  margin: 0;
+  color: white;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.stock:hover {
+  background-color: #953c5c;
+  color: white;
+}
+
+.darker-stock:hover {
+  background-color: #953c5c;
+  color: white;
+}
+
+.symbol {
+  font-size: 15px;
+  margin: 0;
+}
+
+.name {
+  font-size: 20px;
+  font-weight: 700;
+  color: #521f32;
+  min-height: 60px;
+}
+
+.price {
+  margin-top: 0;
+  margin-bottom: 5px;
+  font-weight: 700;
+  position: absolute;
+  bottom: 30px;
+}
+
+.percentage {
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  bottom: 0;
+}
+
+.details-icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 16px;
+  cursor: pointer;
+}
+
+.darker-stock:hover > .details-icon {
+  height: 40px;
+  width: 40px;
+}
+
+.stock:hover > .details-icon {
+  height: 40px;
+  width: 40px;
+}
+
+.details-container {
+  background-color: #dc296e;
+  height: 90vh;
+  color: white;
+}
+
+.name-of-company-in-details {
+  font-size: 50px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: 700;
+  text-align: center;
+}
+
+.details {
+  background-color: #f45893;
+  width: 80%;
+  padding: 10px;
+  border-radius: 10px;
+  box-sizing: content-box;
+}
+
+.field-name {
+  font-size: larger;
+  font-weight: 500;
+}
+
+.back-icon {
+  position: fixed;
+  top: 25px;
+  left: 24px;
+  color: white;
+}
+
+.chart-icon {
+  position: absolute;
+  top: 11px;
+  left: 18px;
+  height: 40px;
+  width: 33px;
+  color: white;
+}
