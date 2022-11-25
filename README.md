@@ -17,7 +17,7 @@
 
 ## Live demo
 
-You can view a live demo of the project using this [link](stockhook.netlify.app).
+You can view a live demo of the project using this [link](https://stockhook.netlify.app/).
 
 ## Getting Started
 
